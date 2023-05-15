@@ -122,4 +122,5 @@ alias nsin="bash ~/Documents/work-automation/startDay.sh"
 
 # Gjør så man får vim-binds
 set -o vi
+export PATH="/home/oliverrj/.config/emacs/bin:$PATH"
 
