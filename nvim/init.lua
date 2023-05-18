@@ -34,6 +34,7 @@ require('lazy').setup({
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
+  'nvim-tree/nvim-web-devicons',
 
   -- Copilot-plugin
   'github/copilot.vim',
@@ -477,6 +478,10 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
-
+local function open_nvim_tree()
+  -- open the tree
+  require("nvim-tree.api").tree.open()
+end
+vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
