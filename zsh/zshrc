@@ -124,3 +124,5 @@ alias nsin="bash ~/Documents/work-automation/startDay.sh"
 set -o vi
 export PATH="/home/oliverrj/.config/emacs/bin:$PATH"
 
+# ghcup, for Haskell-tooling.
+export PATH="/home/oliverrj/.ghcup/bin:$PATH"
