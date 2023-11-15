@@ -126,3 +126,7 @@ export PATH="/home/oliverrj/.config/emacs/bin:$PATH"
 
 # ghcup, for Haskell-tooling.
 export PATH="/home/oliverrj/.ghcup/bin:$PATH"
+
+export VORTEX_HOME=~/Documents/vortex
+export VTK_HOME=~/Documents/vtk
+export VORTEX_FRONTEND_HOME=~/Documents/vortex-frontend
