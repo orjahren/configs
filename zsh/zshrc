@@ -130,3 +130,6 @@ export PATH="/home/oliverrj/.ghcup/bin:$PATH"
 export VORTEX_HOME=~/Documents/vortex
 export VTK_HOME=~/Documents/vtk
 export VORTEX_FRONTEND_HOME=~/Documents/vortex-frontend
+
+[ -f "/home/oliverrj/.ghcup/env" ] && source "/home/oliverrj/.ghcup/env" # ghcup-env
+alias dnf=dnf5
