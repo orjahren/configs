@@ -133,3 +133,4 @@ export VORTEX_FRONTEND_HOME=~/Documents/vortex-frontend
 
 [ -f "/home/oliverrj/.ghcup/env" ] && source "/home/oliverrj/.ghcup/env" # ghcup-env
 alias dnf=dnf5
+alias gdm="git diff $(git_main_branch)"
