@@ -76,6 +76,8 @@ plugins=(git dnf colorize zsh-syntax-highlighting)
 
 ZSH_COLORIZE_TOOL=pygmentize
 
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -134,3 +136,4 @@ export VORTEX_FRONTEND_HOME=~/Documents/vortex-frontend
 [ -f "/home/oliverrj/.ghcup/env" ] && source "/home/oliverrj/.ghcup/env" # ghcup-env
 alias dnf=dnf5
 alias gdm="git diff $(git_main_branch)"
+
