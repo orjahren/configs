@@ -137,3 +137,4 @@ export VORTEX_FRONTEND_HOME=~/Documents/vortex-frontend
 alias dnf=dnf5
 alias gdm="git diff $(git_main_branch)"
 
+alias ghci='stack exec ghci -- -W'
