@@ -76,7 +76,7 @@ plugins=(git dnf colorize zsh-syntax-highlighting)
 
 ZSH_COLORIZE_TOOL=pygmentize
 
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $ZSH/oh-my-zsh.sh
 
