@@ -72,7 +72,7 @@ ZSH_THEME="pygmalion"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git dnf colorize zsh-syntax-highlighting)
+plugins=(git dnf colorize zsh-syntax-highlighting copyfile)
 
 ZSH_COLORIZE_TOOL=pygmentize
 
@@ -107,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nstunnel='ssh -f -N autotunnel'
 alias nsldap='mvn clean jetty:run -Plocal,jetty,local-smtp -Djboss.server.log.dir=/tmp'
-alias nsproxy='nstunnel ; sshuttle -r webjump 0.0.0.0/0 -x saruman.uio.no'
+alias nsproxy='nstunnel ; sshuttle -r webjump 129.240.2.124 129.240.1.112 -x saruman.uio.no'
 alias proxy='ssh -CfND 15236 -i ~/.ssh/id_ed25519 oliverrj@login.uio.no'
 export GPG_TTY=$(tty)
 export PATH="/usr/local/opt/node@16/bin:$PATH"
@@ -138,3 +138,14 @@ alias dnf=dnf5
 alias gdm="git diff $(git_main_branch)"
 
 alias ghci='stack exec ghci -- -W'
+
+
+# Legger til for django
+export PATH="/home/oliverrj/.local/bin:$PATH"
+
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# For Cuda, til Master-ting
+export PATH="/usr/local/cuda-12.6/bin:$PATH"
+
