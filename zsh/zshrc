@@ -73,7 +73,7 @@ ZSH_THEME="obraun"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git dnf colorize zsh-syntax-highlighting copyfile)
+plugins=(git dnf colorize)
 
 ZSH_COLORIZE_TOOL=pygmentize
 
@@ -139,3 +139,9 @@ alias dnf=dnf5
 alias gdm="git diff $(git_main_branch)"
 
 alias ghci='stack exec ghci -- -W'
+
+# For å kjøre air
+export GOPATH="$HOME/go"
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$(go env GOPATH)/bin #Confirm this line in your .profile and make
+
