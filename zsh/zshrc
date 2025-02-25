@@ -122,6 +122,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # initter alias for ns-start
 alias nsin="bash ~/Documents/work-automation/startDay.sh"
+alias dev3="bash ~/Documents/work-automation/dev3.sh"
 
 # Gjør så man får vim-binds
 set -o vi
